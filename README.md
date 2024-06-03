@@ -1,11 +1,11 @@
 # Minecraft Data API
 -------------
 
-[中文](https://github.com/MCDReforged/MinecraftDataAPI/blob/master/README_cn.md)
+[中文](https://github.com/Mooling0602/MinecraftDataAPI-Reforged/blob/master/README_cn.md)
 
 A MCDReforged api plugin to get player data information and more
 
-This fork is aimed to support unnormal player names.
+This fork is aimed to support unnormal player names
 
 ## Dependency
 
