@@ -35,7 +35,7 @@ class PlayerDataGetter:
 			raise RuntimeError('Cannot invoke get_player_info on the task executor thread')
 		if len(path) >= 1 and not path.startswith(' '):
 			path = ' ' + path
-		command = 'data get entity {}{}'.format(player, path)
+		command = 'data get entity "{}"{}'.format(player, path)
 		task = self.get_or_create_queue_task(player)
 		task.count += 1
 		try:
@@ -55,7 +55,7 @@ class PlayerDataGetter:
 				err
 			))
 
-	__ENTITY_DATE_REGEX = re.compile(r'^\w+ has the following entity data: .*$')
+	__ENTITY_DATE_REGEX = re.compile(r'\S* has the following entity data: .*$')
 
 	def on_info(self, info: Info):
 		if not info.is_user:

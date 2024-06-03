@@ -6,7 +6,7 @@ import hjson
 
 
 class MinecraftJsonParser:
-	__COMMAND_RESULT_PREFIX_REGEX = re.compile(r'^[^ ]* has the following entity data: ')
+	__COMMAND_RESULT_PREFIX_REGEX = re.compile(r'\S* has the following entity data: ')
 	__LETTER_AFTER_NUMBER_REGEX = re.compile(r'(([{\[:,]|^) *[+-]?\d+(\.\d*?)?(E[+-]?\d+)?)([bsLdf])')
 	__ARRAY_HEADER_REGEX = re.compile(r'(?<=\[)[IL];')
 
