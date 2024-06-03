@@ -5,6 +5,8 @@
 
 A MCDReforged api plugin to get player data information and more
 
+This fork is aimed to support unnormal player names.
+
 ## Dependency
 
 - `hjson` module
